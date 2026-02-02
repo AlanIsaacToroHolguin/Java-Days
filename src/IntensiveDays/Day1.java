@@ -79,7 +79,7 @@ public class Day1 {
         System.out.println("===== DAY 1 EXERCISES-LOOPS =====");
 
         // -------------------------------------------------------------
-        // 5. Print number from 1 to 100.
+        // 5. Print numbers from 1 to 100.
         // -------------------------------------------------------------
         System.out.println("Ingresa un numero ,desde ese numero se contara hasta 100");
         int num5 = scanner.nextInt();
@@ -90,7 +90,7 @@ public class Day1 {
         }
 
         // -------------------------------------------------------------
-        // 6. Imprimir los multiplos de 3 entre 1 y 50
+        // 6. Print the multiples of 3 between 1 and 50.
         // -------------------------------------------------------------
 
         System.out.println("Ingresa  un numero para ver sus multiplos de 3 en 3 ");
@@ -106,7 +106,7 @@ public class Day1 {
 
 
         // -------------------------------------------------------------
-        // 7. imprimir la tabla de multiplicar del numero que ingrese el user.
+        // 7. print the multiplication table for the number entered by the user.
         // -------------------------------------------------------------
 
         System.out.println("Ingresa el numero de la tabala de multiplicar que desees  ver ");
@@ -125,7 +125,7 @@ public class Day1 {
 
 
         // -------------------------------------------------------------
-        // 8. cuenta regresiva el 10 al 1.
+        // 8. countdown from the number entered by the user
         // -------------------------------------------------------------
 
         System.out.println("Ingresa el numero para la cuenta regresiva");
@@ -136,35 +136,35 @@ public class Day1 {
             System.out.println(i);
 
         // -------------------------------------------------------------
-        // 9. pedir numeros al usuario hasta que ingrese "0".sumar todos
+        // 9. Ask the user to enter numbers until they enter “0.” Add them all up.
         // -------------------------------------------------------------
 
-        int numero;        // Aquí guardaremos cada número ingresado
-        int suma = 0;      // Acumulador donde sumaremos todos los valores
+        int numero;        // Here we will store each number entered.
+        int suma = 0;      // Accumulator where we will add all the values.
 
         System.out.println("Ingresa números para sumar. Para terminar, ingresa 0:");
 
         do {
-            numero = scanner.nextInt();  // Pedimos número al usuario
-            suma += numero;              // Sumamos cada número ingresado
-        } while (numero != 0);           // Cuando el usuario ingresa 0 → se detiene
+            numero = scanner.nextInt();  // We ask the user for their number
+            suma += numero;              // We add each number entered
+        } while (numero != 0);           //  When the user enters 0 → it stops
 
         System.out.println("La suma total es: " + suma);
 
 
 
         // -------------------------------------------------------------
-        // 10. un menu repetitivo
+        //  10. A repetitive menu
         /*
-        1. Saludar
-        2. Mostrar hora
-        3. Hacer una operación
-        0. Salir
+        1. Greet
+        2. Show time
+        3. Perform an operation
+        0. Exit
         */
         // -------------------------------------------------------------
 
 
-        int opcion; // variable para almacenar la opción del usuario
+        int opcion; // variable to store the user's choice
 
         do {
             System.out.println("\n--- MENÚ PRINCIPAL ---");
@@ -174,7 +174,7 @@ public class Day1 {
             System.out.println("0. Salir");
             System.out.print("Elige una opción: ");
 
-            opcion = scanner.nextInt(); // Leemos la opción del usuario
+            opcion = scanner.nextInt(); // We read the user's choice
 
             switch (opcion) {
                 case 1:
@@ -182,12 +182,12 @@ public class Day1 {
                     break;
 
                 case 2:
-                    // Mostramos la hora del sistema
+                    //  We display the system time
                     System.out.println("La hora actual es: " + java.time.LocalTime.now());
                     break;
 
                 case 3:
-                    // Una operación simple (ejemplo: sumar dos números)
+                    // A simple operation (example: adding two numbers)
                     System.out.print("Ingresa el primer número: ");
                     int a = scanner.nextInt();
                     System.out.print("Ingresa el segundo número: ");
@@ -204,7 +204,7 @@ public class Day1 {
                     break;
             }
 
-        } while (opcion != 0);  // 🔁 EL MENÚ SE REPITE HASTA QUE ES 0
+        } while (opcion != 0);  // THE MENU IS REPEATED UNTIL IT IS 0
 
 
         scanner.close();
